@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Page</title>
+</head>
+<body>
+    <ul>
+        <li><a href="{{ url_for('home.homepage') }}">Home</a></li>
+        <li><a href="{{ url_for('about.about') }}">About</a></li>
+    </ul>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
